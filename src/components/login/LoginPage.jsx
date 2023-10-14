@@ -19,6 +19,12 @@ const LoginPage = () => {
       });
   };
 
+  const handleClick = () => {
+
+	// return <Rou>Hello!</Rou>
+	console.log('click')
+  }
+
   return (
     <div className="wrapper">
       <div id="login-logo">
@@ -46,7 +52,7 @@ const LoginPage = () => {
           </form>
           <h3>Already have an account?</h3>
           <div className="create-account">
-            <button>Create account</button>
+            <button onClick={handleClick}>Create account</button>
           </div>
         </div>
       </div>

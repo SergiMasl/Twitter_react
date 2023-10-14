@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./components/login/LoginPage";
 import SingUp from "./components/SingUp/SingUp";
 import { useContext, useState } from "react";
-import AuthContext from "./contents/AuthContext";
+import AuthContext from "./contexts/AuthContext";
 
 function App() {
   // const [isLog, setIsLog] = useState(false);
@@ -19,6 +19,9 @@ function App() {
           <Route path="/" element={<LoginPage />} />
           <Route path="/singup" element={<SingUp />} />
         </Routes>
+        <div className="create-account">
+          <button >Create account</button>
+        </div>
       </BrowserRouter>
     </AuthContext.Provider>
   );
