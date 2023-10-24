@@ -12,7 +12,7 @@ function App() {
 
   return (
     <AuthContext.Provider value={{ authenticated, setAuthenticated }}>
-      <div> user is {`${authenticated ? "" : "not"} authenticated`} </div>
+      {/* <div> user is {`${authenticated ? "" : "not"} authenticated`} </div> */}
       <BrowserRouter>
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
