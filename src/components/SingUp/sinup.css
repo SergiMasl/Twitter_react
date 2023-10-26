@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: #e7e9ea;
+    font-family: "Great Vibes", cursive;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-family: "Work Sans", sans-serif;
+}
+
+body, #root {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.singup-container {
+    width: 20rem
+}

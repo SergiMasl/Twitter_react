@@ -19,10 +19,12 @@ body {
   display: flex;
   justify-content: center;
   padding: 10rem;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 h5 {
@@ -34,6 +36,12 @@ h5 {
   flex-direction: column;
 }
 
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
 .sign-in input,
 .sign-in button,
 .create-account button {
@@ -41,7 +49,11 @@ h5 {
   padding: 0.9rem;
   font-size: medium;
   margin-bottom: 0.9rem;
-  width: 20rem;
+  width: auto;
+}
+
+.sign-in {
+  width: 100%
 }
 
 .sign-in button {
@@ -56,11 +68,22 @@ h5 {
   color: black;
 }
 
-.create-account button {
+.singup-description {
+  text-align: center;
+}
+
+.btn-singup {
   background: #1d9bf0;
-  color: white;
-  font-weight: bolder;
-  font-size: 1.1rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    margin-bottom: 0.9rem;
+    width: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 h3 {
@@ -69,28 +92,90 @@ h3 {
 
 /* ============ Media Queries (medium screen) =============== */
 
-@media screen and (max-width: 1024px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 1.4rem;
-  }
 
-  #login-logo {
-    font-size: 5rem;
-  }
-}
 
 /* ============ Media Queries (small screen) =============== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1126px) {
+  #login-logo {
+    font-size: 14rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 1126px) {
+  #login-logo {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 894px) {
+  h1 {
+    font-size: 2.6rem;
+    margin: 0;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+
+
+  #login-logo {
+    font-size: 5rem;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 1.4rem;
+    margin: 0;
   }
 
   #login-logo {
     font-size: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
+
+  .login-side {
+    margin: 0 4.4rem;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .home-wrapper {
+    width: 100%;
+    font-size: 2.6rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .singup-description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .login-side {
+    margin: 0 1.4rem;
+  }
+
 }
