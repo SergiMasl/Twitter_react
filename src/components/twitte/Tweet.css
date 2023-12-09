@@ -1,0 +1,51 @@
+/* home */
+
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+/* container */
+
+.tweet-list {
+    width: 600px;
+    padding-top: 30px;
+}
+
+/* twitte */
+
+.tweet {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.twitte_logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.twitte_isAu {
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    margin-left: 3px
+}
+
+.tweet-user_name {
+    color: rgb(181, 181, 181);
+    margin: 0;
+    margin-left: 10px;
+}
+
+.user_content {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tweet-content {
+    margin-bottom: 10px;
+}
